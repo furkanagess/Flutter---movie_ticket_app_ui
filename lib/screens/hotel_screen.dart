@@ -1,10 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:ticket_app/utils/app_layout.dart';
 import 'package:ticket_app/utils/app_styles.dart';
 
 class HotelScreen extends StatelessWidget {
-  const HotelScreen({Key? key}) : super(key: key);
+  final Map<String, dynamic> hotel;
+
+  const HotelScreen({Key? key, required this.hotel}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,18 +29,36 @@ class HotelScreen extends StatelessWidget {
         ],
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: 180,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               color: Styles.primaryColor,
-              image: const DecorationImage(
+              image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage(
-                  "assets/images/hotel1.png",
+                  "assets/images/${hotel["image"]}",
                 ),
               ),
+            ),
+          ),
+          const Gap(10),
+          Text(
+            hotel["place"],
+            style: Styles.headlineStyle2.copyWith(color: Styles.kakiColor),
+          ),
+          const Gap(3),
+          Text(
+            hotel["destination"],
+            style: Styles.headlineStyle3.copyWith(color: Colors.white),
+          ),
+          const Gap(25),
+          Center(
+            child: Text(
+              "\$${hotel["price"]}/night",
+              style: Styles.headlineStyle1.copyWith(color: Styles.kakiColor),
             ),
           ),
         ],
