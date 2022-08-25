@@ -6,6 +6,7 @@ import 'package:ticket_app/screens/hotel_screen.dart';
 import 'package:ticket_app/screens/ticket_view.dart';
 import 'package:ticket_app/utils/app_info_list.dart';
 import 'package:ticket_app/utils/app_styles.dart';
+import 'package:ticket_app/widgets/double_text_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -74,23 +75,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const Gap(40),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Upcoming Flights",
-                      style: Styles.headlineStyle2,
-                    ),
-                    InkWell(
-                      onTap: () {},
-                      child: Text(
-                        "View all",
-                        style: Styles.textStyle
-                            .copyWith(color: Styles.primaryColor),
-                      ),
-                    ),
-                  ],
-                ),
+                AppDoubleTextWidget(
+                    bigText: "Upcoming Flights", smallText: "View All")
               ],
             ),
           ),
@@ -106,25 +92,9 @@ class HomeScreen extends StatelessWidget {
           ),
           const Gap(15),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Hotels",
-                  style: Styles.headlineStyle2,
-                ),
-                InkWell(
-                  onTap: () {},
-                  child: Text(
-                    "View all",
-                    style:
-                        Styles.textStyle.copyWith(color: Styles.primaryColor),
-                  ),
-                ),
-              ],
-            ),
-          ),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: AppDoubleTextWidget(
+                  bigText: "Hotels", smallText: "View All")),
           Gap(15),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
