@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:ticket_app/utils/app_layout.dart';
 import 'package:ticket_app/utils/app_styles.dart';
+import 'package:ticket_app/widgets/layout_builder_widget.dart';
 import 'package:ticket_app/widgets/thick_container.dart';
 
 import '../widgets/column_layout.dart';
@@ -156,29 +157,8 @@ class TicketView extends StatelessWidget {
                   Expanded(
                     child: Padding(
                       padding: EdgeInsets.all(AppLayout.getHeight(12)),
-                      child: LayoutBuilder(
-                        builder:
-                            (BuildContext context, BoxConstraints constraints) {
-                          return Flex(
-                            direction: Axis.horizontal,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            mainAxisSize: MainAxisSize.max,
-                            children: List.generate(
-                              ((constraints).constrainWidth() / 15).floor(),
-                              (index) => SizedBox(
-                                width: AppLayout.getWidth(5),
-                                height: AppLayout.getHeight(1),
-                                child: DecoratedBox(
-                                  decoration: BoxDecoration(
-                                    color: isColor == null
-                                        ? Colors.white
-                                        : Colors.grey.shade300,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          );
-                        },
+                      child: AppLayoutBuilderWidget(
+                        sections: 6,
                       ),
                     ),
                   ),
@@ -220,19 +200,19 @@ class TicketView extends StatelessWidget {
                         firstText: ticket["date"],
                         secondText: "Date",
                         alignment: CrossAxisAlignment.start,
-                        isColor: false,
+                        isColor: isColor,
                       ),
                       AppColumnLayout(
                         firstText: ticket["departure_time"],
                         secondText: "Departure Time",
                         alignment: CrossAxisAlignment.start,
-                        isColor: false,
+                        isColor: isColor,
                       ),
                       AppColumnLayout(
                         firstText: ticket["number"].toString(),
                         secondText: "Number",
                         alignment: CrossAxisAlignment.end,
-                        isColor: false,
+                        isColor: isColor,
                       ),
                     ],
                   )
