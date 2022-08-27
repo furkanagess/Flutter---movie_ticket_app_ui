@@ -57,8 +57,9 @@ class HomeScreen extends StatelessWidget {
                 const Gap(25),
                 Container(
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: const Color(0xFFF4F6FD)),
+                    borderRadius: BorderRadius.circular(10),
+                    color: Color.fromARGB(255, 58, 57, 52),
+                  ),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                   child: Row(
@@ -68,7 +69,7 @@ class HomeScreen extends StatelessWidget {
                         color: Color(0xFFBFC205),
                       ),
                       Text(
-                        "Search",
+                        "Search a (Director, Film, Actor... etc.)",
                         style: Styles.headlineStyle4,
                       )
                     ],

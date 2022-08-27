@@ -30,14 +30,9 @@ List<Map<String, dynamic>> ticketList = [
   //-----------------1-------------------
   {
     "from": {
-      "code": "NYC",
-      "name": "New York",
+      "code": "Leon: The Professionel",
+      "name": "Luc Besson",
     },
-    "to": {
-      "code": "LDN",
-      "name": "London",
-    },
-    "flying_time": "6H 15M",
     "date": "1 MAY",
     "departure_time": "09:00 AM",
     "number": 43
@@ -45,14 +40,9 @@ List<Map<String, dynamic>> ticketList = [
   //-------------------2-----------------
   {
     "from": {
-      "code": "IST",
-      "name": "Istanbul",
+      "code": "Portrait of a Lady on Fire",
+      "name": "Celine Sciamma",
     },
-    "to": {
-      "code": "TEX",
-      "name": "Texas",
-    },
-    "flying_time": "16H 35M",
     "date": "17 JUNE",
     "departure_time": "19:00 PM",
     "number": 21
@@ -60,14 +50,9 @@ List<Map<String, dynamic>> ticketList = [
   //------------------3------------------
   {
     "from": {
-      "code": "ANK",
-      "name": "Ankara",
+      "code": "Cold War",
+      "name": "Pawel Pawlikowski",
     },
-    "to": {
-      "code": "MEL",
-      "name": "Melbourne",
-    },
-    "flying_time": "6H 55M",
     "date": "21 JULY",
     "departure_time": "04:00 AM",
     "number": 12
@@ -75,14 +60,9 @@ List<Map<String, dynamic>> ticketList = [
   //------------------4-------------------
   {
     "from": {
-      "code": "LDN",
-      "name": "London",
+      "code": "In the Mood for Love",
+      "name": "Wong Kar-Wai",
     },
-    "to": {
-      "code": "MOS",
-      "name": "Moskova",
-    },
-    "flying_time": "9H 15M",
     "date": "2 SEP",
     "departure_time": "11:00 AM",
     "number": 32

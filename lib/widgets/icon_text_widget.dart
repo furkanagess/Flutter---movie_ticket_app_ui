@@ -16,15 +16,16 @@ class AppIconText extends StatelessWidget {
       padding: EdgeInsets.symmetric(
           vertical: AppLayout.getWidth(12), horizontal: AppLayout.getWidth(12)),
       decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(
-            AppLayout.getWidth(10),
-          )),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(
+          AppLayout.getWidth(10),
+        ),
+      ),
       child: Row(
         children: [
           Icon(
             icon,
-            color: Color(0xFFBFC2DF),
+            color: const Color(0xFFBFC2DF),
           ),
           Gap(AppLayout.getWidth(10)),
           Text(
