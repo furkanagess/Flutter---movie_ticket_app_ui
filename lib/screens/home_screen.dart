@@ -30,20 +30,20 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Text(
                           "Good Morning",
-                          style: Styles.headlineStyle3,
-                        ),
-                        const Gap(5),
-                        Text(
-                          "Book Tickets",
                           style: Styles.headlineStyle1,
+                        ),
+                        const Gap(10),
+                        Text(
+                          "John Docke",
+                          style: Styles.headlineStyle3,
                         ),
                       ],
                     ),
                     Container(
-                      height: 50,
-                      width: 50,
+                      height: 60,
+                      width: 80,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(0),
                         image: const DecorationImage(
                           fit: BoxFit.fitHeight,
                           image: AssetImage(
@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 const Gap(40),
                 AppDoubleTextWidget(
-                    bigText: "Upcoming Flights", smallText: "View All")
+                    bigText: "Upcoming Sessions", smallText: "View All")
               ],
             ),
           ),
@@ -94,11 +94,11 @@ class HomeScreen extends StatelessWidget {
           Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: AppDoubleTextWidget(
-                  bigText: "Hotels", smallText: "View All")),
+                  bigText: "Theaters", smallText: "View All")),
           Gap(15),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            padding: const EdgeInsets.only(left: 20),
+            padding: EdgeInsets.only(left: 20),
             child: Row(
               children:
                   hotelList.map((hotel) => HotelScreen(hotel: hotel)).toList(),

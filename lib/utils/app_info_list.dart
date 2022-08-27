@@ -3,24 +3,24 @@
 List<Map<String, dynamic>> hotelList = [
   //------------------1------------------
   {
-    'image': 'hotel1.png',
-    "place": "Open Space",
-    "destination": "London",
-    "price": 125,
+    'image': 'salon1.jpg',
+    "place": "Le Grand Rex",
+    "destination": "Paris",
+    "price": 65,
   },
   //------------------2------------------
   {
-    'image': 'hotel2.jfif',
-    "place": "Global Will",
-    "destination": "New York",
-    "price": 140,
+    'image': 'salon2.jpg',
+    "place": "Cineta Matadero",
+    "destination": "Spain",
+    "price": 50,
   },
   //-------------------3------------------
   {
-    'image': 'hotel3.jfif',
-    "place": "Tallest Building",
-    "destination": "Dubai",
-    "price": 325,
+    'image': 'salon3.jfif',
+    "place": "Kadikoy Sinemasi",
+    "destination": "Istanbul",
+    "price": 45,
   },
 ];
 

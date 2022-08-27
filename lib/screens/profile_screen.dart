@@ -157,15 +157,19 @@ class ProfileScreen extends StatelessWidget {
                       children: [
                         Text(
                           "You have got a new award",
-                          style: Styles.headlineStyle2.copyWith(
-                              fontWeight: FontWeight.bold, color: Colors.white),
+                          style: Styles.headlineStyle4.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 16,
+                          ),
                         ),
+                        Gap(AppLayout.getHeight(8)),
                         Text(
                           "You have 95 flights in a year",
                           style: Styles.headlineStyle2.copyWith(
                             fontWeight: FontWeight.w500,
                             color: Colors.white.withOpacity(0.9),
-                            fontSize: 16,
+                            fontSize: 12,
                           ),
                         ),
                       ],

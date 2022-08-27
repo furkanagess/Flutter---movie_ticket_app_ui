@@ -136,7 +136,6 @@ class TicketScreen extends StatelessWidget {
                 height: 1,
               ),
               Container(
-                color: Colors.white,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(

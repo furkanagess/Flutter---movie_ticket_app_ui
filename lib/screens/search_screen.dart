@@ -54,7 +54,7 @@ class SearchScreen extends StatelessWidget {
             child: Center(
               child: Text("Find Tickets",
                   style: Styles.textStyle
-                      .copyWith(color: Colors.white, fontSize: 2)),
+                      .copyWith(color: Colors.white, fontSize: 16)),
             ),
           ),
           Gap(
@@ -186,15 +186,15 @@ class SearchScreen extends StatelessWidget {
                             children: [
                               TextSpan(
                                 text: "🥰",
-                                style: TextStyle(fontSize: 38),
+                                style: TextStyle(fontSize: 20),
                               ),
                               TextSpan(
                                 text: "😘",
-                                style: TextStyle(fontSize: 50),
+                                style: TextStyle(fontSize: 30),
                               ),
                               TextSpan(
                                 text: "😍",
-                                style: TextStyle(fontSize: 38),
+                                style: TextStyle(fontSize: 20),
                               ),
                             ],
                           ),
